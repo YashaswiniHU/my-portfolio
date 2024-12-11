@@ -12,7 +12,7 @@ function About() {
         Engineering at Malnad College of Engineering with a CGPA of 9.40, I am seeking opportunities where I can continue to grow 
         and make a significant impact.
       </p>
-      <img src="public/profile.jpg" alt="Profile" />
+      <img src="/my-portfolio/profile.jpg" alt="Profile" />
     </div>
   );
 }
