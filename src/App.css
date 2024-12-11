@@ -1,0 +1,272 @@
+
+/* General body and background styles */
+
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #000;
+color: #fff;
+overflow-x: hidden;
+}
+
+.app {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+position: relative;
+background-color: #000;
+}
+
+/* Header styles */
+
+header {
+background-color: #333;
+color: #fff;
+padding: 30px;
+text-align: center;
+font-size: 34px;
+font-weight: bold;
+letter-spacing: 2px;
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+animation: fadeInHeader 1.5s ease-out;
+}
+
+@keyframes fadeInHeader {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+/* Navigation bar styles */
+
+nav {
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+justify-content: center;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+nav a {
+text-decoration: none;
+color: #fff;
+padding: 15px 25px;
+margin: 0 20px;
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 1px;
+border-radius: 5px;
+transition: all 0.4s ease;
+background-color: #FFD700;
+color: #000;
+}
+
+nav a:hover {
+background-color: #ffd70080;
+transform: translateY(-6px);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Main content styles */
+
+.content {
+flex: 1;
+padding: 40px;
+background-color: #000;
+margin: 40px auto;
+max-width: 1200px;
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+border-radius: 15px;
+transition: all 0.3s ease;
+transform: scale(0.98);
+opacity: 0;
+animation: fadeInContent 1.5s ease-out forwards;
+background-color: #1a1a1a;
+color: #fff;
+}
+
+@keyframes fadeInContent {
+from {
+opacity: 0;
+transform: scale(0.9);
+}
+to {
+opacity: 1;
+transform: scale(1);
+}
+}
+
+.content:hover {
+transform: scale(1.03);
+}
+
+/* Section headers */
+
+h2 {
+font-size: 32px;
+margin-bottom: 20px;
+color: #FFD700;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+border-bottom: 3px solid #FFD700;
+padding-bottom: 8px;
+animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+from {
+transform: translateX(-30px);
+opacity: 0;
+}
+to {
+transform: translateX(0);
+opacity: 1;
+}
+}
+
+/* About Section */
+
+.about {
+font-size: 18px;
+line-height: 1.7;
+color: #fff;
+margin-top: 20px;
+animation: fadeIn 1.5s ease-out;
+}
+
+/* Card Layout for Projects and Skills */
+
+.card {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: space-between;
+}
+
+.card-item {
+background-color: #1a1a1a;
+padding: 25px;
+width: 30%;
+border-radius: 12px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+opacity: 0;
+animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+from {
+transform: translateY(30px);
+opacity: 0;
+}
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+.card-item:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-item h3 {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #FFD700;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  }
+  
+  .card-item:hover h3 {
+  color: #ffd70080;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  font-size: 16px;
+  box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  }
+  
+  footer a {
+  color: #fff;
+  text-decoration: none;
+  }
+  
+  footer a:hover {
+  color: #FFD700;
+  }
+  
+  /* Responsive Design for Mobile */
+  
+  @media (max-width: 768px) {
+  .card-item {
+  width: 48%;
+  }
+  .card {
+  justify-content: center;
+  }
+  }
+  
+  @media (max-width: 480px) {
+  nav {
+  flex-direction: column;
+  }
+  .card-item {
+  width: 100%;
+  }
+  .content {
+  padding: 20px;
+  }
+  }
+  
+  /* Button Styles */
+  
+  .button {
+  background-color: #FFD700;
+  color: #000;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+  background-color: #ffd70080;
+  transform: scale(1.05);
+  }
+  
+  /* Input Styles */
+  
+  .input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+  background-color: #1a1a1a;
+  color: #fff;
+  }
+  
+  .input:focus {
+  outline: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+  

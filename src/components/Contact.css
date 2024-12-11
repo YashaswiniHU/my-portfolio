@@ -1,0 +1,23 @@
+.contact {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact li {
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}

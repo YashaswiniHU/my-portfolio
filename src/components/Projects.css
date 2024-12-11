@@ -1,0 +1,36 @@
+.projects {
+    padding: 20px;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #ecf0f1;
+    color: #656e6f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  .project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
